@@ -10,4 +10,7 @@ Features
 
 
 How to Run
-1. Clone this repository    git clone https://github.com/Umerabbas25/WEB-DEV-PARACTICE
+1. Clone this repository :
+git clone https://github.com/Umerabbas25/WEB-DEV-PARACTICE
+
+2. Open in Html file in your Favourite Browser
