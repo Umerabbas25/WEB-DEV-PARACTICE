@@ -10,6 +10,4 @@ Features
 
 
 How to Run
-1. Clone this repository  
-   ```bash
-  git clone https://github.com/Umerabbas25/WEB-DEV-PARACTICE
+1. Clone this repository    git clone https://github.com/Umerabbas25/WEB-DEV-PARACTICE
