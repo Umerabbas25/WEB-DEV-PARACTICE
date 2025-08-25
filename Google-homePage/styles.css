@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(123, 44, 15);
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+  margin-top: 150px;
+}
+
+.search-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-bar input :hover{
+    border: 2px solid rgb(123, 44, 15);
+}
+
+
+.search-bar input{
+    width: 700px;
+    border-radius: 50px;
+    height: 42px;
+    padding-left: 100px;
+    border: 2 px solid beige;
+}
+
+.search-bar .img1{
+    position: absolute;
+    left: 250px;
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar .img2{
+    position: absolute;
+    right: 260px;
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar .img3{
+    position: absolute;
+    right: 235px;
+    width: 20px;
+    height: 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;       
+  gap: 20px;                 
+  padding: 10px 30px;        
+}
+
+.head p,
+.head svg {
+  margin: 0;   
+  cursor: pointer;
+}
+
+.gb_F{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.u{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+
+.book-marks{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
