@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Rock Paper Scissors
+
+    </p>
+    <button onclick="
+    userSelect = 'rock';
+            randomNumber = Math.floor(Math.random() * 3) + 1;
+        if(randomNumber === 1){
+            computerSelect = option1;
+        } else if (randomNumber === 2){
+            computerSelect = option2;
+        } else if (randomNumber === 3){
+            computerSelect = option3;
+        }
+
+
+
+        if(computerSelect === option1){
+            alert(`Computer Selects ${computerSelect}. Its a tie`);
+        }else if (computerSelect == option2){
+            alert(`Computer Selects ${computerSelect}. You Lose`);
+            
+        }else if(computerSelect == option3){
+            alert(`Computer Selects ${computerSelect}. You Win`);
+        }
+
+        
+    ">Rock
+    </button>
+
+
+    <button onclick="
+    userSelect = 'paper';
+       randomNumber = Math.floor(Math.random() * 3) + 1;
+        if(randomNumber === 1){
+            computerSelect = option1;
+        } else if (randomNumber === 2){
+            computerSelect = option2;
+        } else if (randomNumber === 3){
+            computerSelect = option3;
+        }
+
+            if(computerSelect === option2){
+                            alert(`Computer Selects ${computerSelect}. Its a tie`);
+
+        }else if (computerSelect == option1){
+            alert(`Computer Selects ${computerSelect}. You Win`);
+        }else if(computerSelect == option3){
+            alert(`Computer Selects ${computerSelect}. You Lose`);
+        }
+
+    
+    ">Paper</button>
+    <button onclick="
+    userSelect= 'Scissor'; 
+       randomNumber = Math.floor(Math.random() * 3) + 1;
+        if(randomNumber === 1){
+            computerSelect = option1;
+        } else if (randomNumber === 2){
+            computerSelect = option2;
+        } else if (randomNumber === 3){
+            computerSelect = option3;
+        }
+
+
+        if(computerSelect === option3)
+            alert(`Computer Selects ${computerSelect}. Its a tie`);
+        else if (computerSelect == option1){
+            alert(`Computer Selects ${computerSelect}. You Lose`);
+        }   else if(computerSelect == option2){
+            alert(`Computer Selects ${computerSelect}. You Win`);
+        }
+    
+    ">Scissor</button>
+
+
+    <script>
+        let randomNumber;
+        let userSelect = "";
+        let computerSelect = "";
+        let option1 = 'rock';
+        let option2 = 'paper';
+        let option3 = 'scissor';
+
+
+
+    </script>
+</body>
+
+</html>
