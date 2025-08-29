@@ -12,75 +12,17 @@
 
     </p>
     <button onclick="
-    userSelect = 'rock';
-            randomNumber = Math.floor(Math.random() * 3) + 1;
-        if(randomNumber === 1){
-            computerSelect = option1;
-        } else if (randomNumber === 2){
-            computerSelect = option2;
-        } else if (randomNumber === 3){
-            computerSelect = option3;
-        }
-
-
-
-        if(computerSelect === option1){
-            alert(`Computer Selects ${computerSelect}. Its a tie`);
-        }else if (computerSelect == option2){
-            alert(`Computer Selects ${computerSelect}. You Lose`);
-            
-        }else if(computerSelect == option3){
-            alert(`Computer Selects ${computerSelect}. You Win`);
-        }
-
-        
-    ">Rock
+        playGame('rock');">Rock
     </button>
 
 
     <button onclick="
-    userSelect = 'paper';
-       randomNumber = Math.floor(Math.random() * 3) + 1;
-        if(randomNumber === 1){
-            computerSelect = option1;
-        } else if (randomNumber === 2){
-            computerSelect = option2;
-        } else if (randomNumber === 3){
-            computerSelect = option3;
-        }
-
-            if(computerSelect === option2){
-                            alert(`Computer Selects ${computerSelect}. Its a tie`);
-
-        }else if (computerSelect == option1){
-            alert(`Computer Selects ${computerSelect}. You Win`);
-        }else if(computerSelect == option3){
-            alert(`Computer Selects ${computerSelect}. You Lose`);
-        }
-
-    
-    ">Paper</button>
-    <button onclick="
-    userSelect= 'Scissor'; 
-       randomNumber = Math.floor(Math.random() * 3) + 1;
-        if(randomNumber === 1){
-            computerSelect = option1;
-        } else if (randomNumber === 2){
-            computerSelect = option2;
-        } else if (randomNumber === 3){
-            computerSelect = option3;
-        }
+     playGame('paper'); ">Paper</button>
 
 
-        if(computerSelect === option3)
-            alert(`Computer Selects ${computerSelect}. Its a tie`);
-        else if (computerSelect == option1){
-            alert(`Computer Selects ${computerSelect}. You Lose`);
-        }   else if(computerSelect == option2){
-            alert(`Computer Selects ${computerSelect}. You Win`);
-        }
-    
-    ">Scissor</button>
+ <button onclick="
+     playGame('scissor'); ">Scissor</button>
+
 
 
     <script>
@@ -92,6 +34,39 @@
         let option3 = 'scissor';
 
 
+        function playGame(userSelect) {
+
+            randomNumber = Math.floor(Math.random() * 3) + 1;
+            if (randomNumber === 1) {
+                computerSelect = option1;
+            } else if (randomNumber === 2) {
+                computerSelect = option2;
+            } else if (randomNumber === 3) {
+                computerSelect = option3;
+            }
+
+
+            if (computerSelect === userSelect) {
+                alert(`Computer Selects ${computerSelect}. Its a tie`);
+            } else if (computerSelect == option1 && userSelect == option2) {
+                alert(`Computer Selects ${computerSelect}. You Win`);
+
+            } else if (computerSelect == option2 && userSelect == option1) {
+                alert(`Computer Selects ${computerSelect}. You Lose`);
+            }
+            else if (computerSelect == option2 && userSelect == option3) {
+                alert(`Computer Selects ${computerSelect}. You Win`);
+            } else if (computerSelect == option3 && userSelect == option2) {
+                alert(`Computer Selects ${computerSelect}. You Lose`);
+            }
+            else if (computerSelect == option3 && userSelect == option1) {
+                alert(`Computer Selects ${computerSelect}. You Win`);
+
+            } else if (computerSelect == option1 && userSelect == option3) {
+                alert(`Computer Selects ${computerSelect}. You Lose`);
+
+            }
+        }
 
     </script>
 </body>
